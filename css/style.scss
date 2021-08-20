@@ -1,0 +1,246 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  
+}
+.fas::before,
+.far::before {
+  font-family: "Font Awesome 5 Free";
+}
+.fab::before {
+  font-family: "Font Awesome 5 Brands";
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  background-color: rgb(26, 1, 85);
+  padding: 15px;
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__name {
+    border-bottom: 1px solid #fff;
+    .h1 {
+      font-size: 50px;
+      line-height: 60px;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+    .h2 {
+      font-size: 30px;
+      line-height: 40px;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+  }
+  &__img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+  }
+}
+
+.section__title {
+  width: 320px;
+  max-width: 320px;
+  p {
+    display: block;
+    width: 320px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgb(26, 1, 85);
+    line-height: 30px;
+  }
+}
+.contacts,
+.about,
+.skills,
+.experience,
+.education,
+.languages,
+.works {
+    color: rgb(26, 1, 85);
+  padding: 20px;
+  &__container {
+    display: flex;
+   
+  }
+}
+
+.contacts {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    a {
+      color: rgb(26, 1, 85);
+      margin: 5px 0px;
+      text-decoration: none;
+      i {
+        margin-right: 7px;
+      }
+    }
+  }
+}
+
+.about {
+  &__content {
+    p {
+      line-height: 24px;
+    }
+  }
+}
+
+.skills {
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+  }
+  &__item {
+    border: 1px solid rgb(26, 1, 85);
+    padding: 7px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 7px;
+    &--big {
+      font-size: 20px;
+    }
+    &--mid {
+      font-size: 16px;
+    }
+    &--small {
+      font-size: 13px;
+    }
+  }
+  &__item + &__item {
+    margin-left: 7px;
+  }
+}
+
+.experience {
+  &__item {
+    .h3 {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    p {
+      line-height: 24px;
+    }
+  }
+  &__position {
+    p {
+      font-size: 16px;
+      margin-bottom: 10px;
+      display: inline-block;
+      font-weight: 800;
+    }
+    span {
+      font-size: 16px;
+      font-weight: 200;
+    }
+  }
+}
+
+.education {
+  &__item {
+    .h3 {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+  }
+  &__position {
+    p {
+      font-size: 16px;
+      margin-bottom: 10px;
+      display: inline-block;
+      font-weight: 800;
+    }
+    span {
+      font-size: 16px;
+      font-weight: 200;
+    }
+  }
+}
+
+.languages {
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__item {
+    padding: 7px;
+    padding-left: 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 7px;
+    i:last-child{
+        margin-right: 10px;
+    }
+  }
+}
+
+.works{
+    &-list{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        &__technologies{
+            display: flex;
+            align-items: baseline;
+            p{
+                line-height: 36px;
+                margin-right: 10px;
+            }
+            span{
+                margin-right: 10px;
+            }
+        }
+        &__item{
+            margin-bottom: 20px;
+            .h4{
+                margin-bottom: 10px;
+                a{
+                    color: rgb(26, 1, 85);
+                }
+            }
+        }
+        &__gallery{
+            .h5{
+                margin-bottom: 10px;
+                
+            }
+            border-bottom: 2px solid rgb(26, 1, 85);
+            a{
+              img{
+
+                margin-bottom: 20px;
+              }
+            }
+        }
+    }
+}

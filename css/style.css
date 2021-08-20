@@ -1,0 +1,59 @@
+*, *::after, *::before { -webkit-box-sizing: border-box; box-sizing: border-box; font-family: "Oswald", sans-serif; }
+
+.fas::before, .far::before { font-family: "Font Awesome 5 Free"; }
+
+.fab::before { font-family: "Font Awesome 5 Brands"; }
+
+.wrapper { width: 100%; }
+
+.container { width: 1200px; margin: 0 auto; padding: 0 15px; }
+
+.header { background-color: #1a0155; padding: 15px; }
+.header__container { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.header__name { border-bottom: 1px solid #fff; }
+.header__name .h1 { font-size: 50px; line-height: 60px; margin-bottom: 10px; color: #fff; }
+.header__name .h2 { font-size: 30px; line-height: 40px; margin-bottom: 10px; color: #fff; }
+.header__img { width: 200px; height: 200px; border-radius: 50%; border: 5px solid #fff; }
+
+.section__title { width: 320px; max-width: 320px; }
+.section__title p { display: block; width: 320px; font-size: 20px; text-transform: uppercase; color: #1a0155; line-height: 30px; }
+
+.contacts, .about, .skills, .experience, .education, .languages, .works { color: #1a0155; padding: 20px; }
+.contacts__container, .about__container, .skills__container, .experience__container, .education__container, .languages__container, .works__container { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.contacts__content { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+.contacts__content a { color: #1a0155; margin: 5px 0px; text-decoration: none; }
+.contacts__content a i { margin-right: 7px; }
+
+.about__content p { line-height: 24px; }
+
+.skills__list { margin: 0; padding: 0; list-style-type: none; display: -webkit-box; display: -ms-flexbox; display: flex; }
+.skills__item { border: 1px solid #1a0155; padding: 7px; border-radius: 5px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 7px; }
+.skills__item--big { font-size: 20px; }
+.skills__item--mid { font-size: 16px; }
+.skills__item--small { font-size: 13px; }
+.skills__item + .skills__item { margin-left: 7px; }
+
+.experience__item .h3 { font-size: 20px; font-weight: 800; margin-bottom: 10px; }
+.experience__item p { line-height: 24px; }
+.experience__position p { font-size: 16px; margin-bottom: 10px; display: inline-block; font-weight: 800; }
+.experience__position span { font-size: 16px; font-weight: 200; }
+
+.education__item .h3 { font-size: 20px; font-weight: 800; margin-bottom: 10px; }
+.education__position p { font-size: 16px; margin-bottom: 10px; display: inline-block; font-weight: 800; }
+.education__position span { font-size: 16px; font-weight: 200; }
+
+.languages__list { margin: 0; padding: 0; list-style-type: none; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
+.languages__item { padding: 7px; padding-left: 0; border-radius: 5px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 7px; }
+.languages__item i:last-child { margin-right: 10px; }
+
+.works-list { list-style-type: none; margin: 0; padding: 0; }
+.works-list__technologies { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; }
+.works-list__technologies p { line-height: 36px; margin-right: 10px; }
+.works-list__technologies span { margin-right: 10px; }
+.works-list__item { margin-bottom: 20px; }
+.works-list__item .h4 { margin-bottom: 10px; }
+.works-list__item .h4 a { color: #1a0155; }
+.works-list__gallery { border-bottom: 2px solid #1a0155; }
+.works-list__gallery .h5 { margin-bottom: 10px; }
+.works-list__gallery a img { margin-bottom: 20px; }
